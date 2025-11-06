@@ -1,0 +1,8 @@
+code editor:
+https://code.visualstudio.com/
+
+Node.js
+https://nodejs.org/en
+
+Gitbash:
+https://git-scm.com/
