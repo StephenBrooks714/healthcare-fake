@@ -6,3 +6,6 @@ https://nodejs.org/en
 
 Gitbash:
 https://git-scm.com/
+
+w3schools:
+https://www.w3schools.com/html/html5_semantic_elements.asp 
