@@ -9,9 +9,183 @@
         font-variation-settings:
             "wdth" 100;
     }
-    h1 {
-        color: rgb(19, 19, 128);
+   
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ******************************************************************** */
+/* flex box */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 9px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.col-md-3 {
+    flex-basis: 25%;
+    flex: 25%;
+    padding: 9px;
+}
+
+.col-md-4 {
+    flex-basis: 33.333333%;
+    flex: 33.333333%;
+    padding: 9px;
+}
+
+.col-md-6 {
+    flex-basis: 50%;
+    flex: 50%;
+    padding: 9px;
+}
+
+.col-md-12 {
+    flex-basis: 100%;
+    flex: 100%;
+    padding: 9px;
+}
+
+@media(max-width: 992px) {
+    .col-md-3 {
+        flex-basis: 50%;
+        flex: 50%;
+        padding: 9px;
     }
-    h2 {
-        color: rgb(82, 82, 175);
+
+    .col-md-4 {
+        flex-basis: 100%;
+        flex: 100%;
+        padding: 9px;
     }
+    .col-md-6 {
+        flex-basis: 100%;
+        flex: 100%;
+        padding: 9px;
+    }
+}
+@media(max-width: 862px) {
+    .col-md-3 {
+        flex-basis: 100%;
+        flex: 100%;
+        padding: 9px;
+    }
+}
+
+/* ******************************************************************** */
+/* font sizes and spacing */
+.display-4 {
+    font-size: 3rem;
+}
+.lead {
+    font-size: 19px;
+    font-weight: light;
+    word-spacing: 2px;
+}
+.h1 {
+    font-size: 2rem;
+    margin-bottom: 3px;
+}
+@media(max-width: 862px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+}
+
+/* ********************************************************************* */
+/* form styling */
+.form-label {
+    display: flex;
+    width: 100%;
+}
+input.form-control {
+    width: 100%;
+    height: 23px;
+    padding: 3px; 
+    border: 1px solid grey;
+}
+textarea.form-control {
+    width: 100%;
+    height: 100%;
+    padding: 3px; 
+    border: 1px solid none;
+}
+.btn {
+    display: inline-block;
+    padding: 9px;
+    border-radius: 3px;
+    font-size: 17px;
+}
+
+.btn-primary {
+    background-color: rgb(18, 18, 174);
+    color: white;
+}
+
+/* ************************************************************************ */
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 34, 58);
+    padding-right: 25px;
+}
+
+.navbar > ul {
+    display: flex;
+    color: black;
+    list-style: none;
+}
+
+.navbar > ul > li{
+    margin: 5px;
+}
+
+.navbar > ul > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width: 992px) {
+    #hidden {
+        display: none;
+    }
+}
+
+/* *********************************************************************** */
+/* footer css */
+footer {
+    margin-top: 40px;
+}
+.body-titeray-bg {
+    background-color: rgb(229, 224, 224);
+}
+.nav-link {
+    display:flex;
+    margin: 5px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}

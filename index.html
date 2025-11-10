@@ -4,66 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health NonProfit Organization</title>
-    <!-- <link rel="stylesheet" href="./css/index.min.css"> -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./css/index.css">
+<!--    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
 </head>
 <header itemid="introduction" itemref="url/needed" itemscope>
-    <nav></nav>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="">Logo</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        
+        </ul>
+        <ul id="hidden">
+            <li>
+                <a href="">Nav Link</a>
+            </li>
+            <li>
+                <a href="">Nav Link</a>
+            </li>
+            <li>
+                <a href="">Nav Link</a>
+            </li>
+            <li>
+                <a href="">Nav Link</a>
+            </li>
+        </ul>
+    </nav>
 </header>
+<!-- internal -->
+
 <body>
     <main class="container">
         <section class="row">
+            <div class="col-md-12 mb-lg-0 mb-3">
+                <h1 class="text-center display-4">Our Health Maintenance Organization</h1>
+                <hr style="width: 250px">
+            </div>
             <div class="col-md-6 mb-lg-0 mb-3"  itemprop="article"> 
-                <h1>Our Health Maintenance ORginzation</h1>
-                <hr>
                 <article itemprop="article section with content">
-                    <h2>Section Title</h2>
+                    <h2 class="h1">Section Title</h2>
                     <h3>Sub Title</h3>
-                    <p>
-                        <img class="img-fluid" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="image for section 1">
+                    <img class="img-fluid" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="image for section 1">
+                    <p class="lead">
+                        
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae officiis odio harum provident ducimus nihil aliquam blanditiis corporis illum, asperiores distinctio culpa officia et, consequatur non architecto corrupti possimus placeat.
                     </p>
                 </article>
             </div>
             <div class="col-md-6 mb-lg-0 mb-3"  itemprop="news content about healthcare" itemtype="url" itemref="url/needed">
                 <div>
-                    <h2>Second Title</h2>
+                    <h2 class="h1">Second Title</h2>
                     <h3>Sub Title</h3>
-                    <p>
-                        <img class="img-fluid h-50 w-75" src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" alt="image for section 2">
+                    <img class="img-fluid h-50 w-75" src="https://images.unsplash.com/photo-1638202993928-7267aad84c31?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" alt="image for section 2">
+                    <p class="lead">
+                        
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, aliquid! Itaque, rerum facilis debitis qui dolores saepe incidunt, blanditiis dolorum aliquam temporibus asperiores a quisquam, corporis laborum. Dolorem, beatae suscipit.
                     </p>
                 </div>
             </div>
             <fieldset class="col-md-12 mb-lg-0 mb-3">
                 <legend>Contact Us</legend>
-                <form action="#!" method="post" enctype="multipart/form-data">
-                    <label for="name" class="form-label">Your Name</label> <br>
-                    <input type="text" id="name" class="form-control" name="name" required> <br>
-                    <label for="email" class="form-label">Your Name</label> <br>
-                    <input type="email" id="email" class="form-control" name="email" required> <br>
-                    <label for="message" class="form-label">Your Message</label> <br>
-                    <textarea name="message" id="message" maxlength="655" class="form-control" minlength="100" required></textarea> <br>
-                    <button type="submit">submit form</button>
-                </form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./assets/contact-us.png" class="img-fluid" alt="contact section logo">
+                        <ul>
+                            <li>
+                                1231 Main St - Chicago, IL.
+                            </li>
+                            <li>
+                                Sales: 555-555-5555
+                            </li>
+                            <li>
+                                Service: 555-555-5555
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <form action="#!" method="post" enctype="multipart/form-data">
+                            <label for="name" class="form-label">Your Name</label> 
+                            <input type="text" id="name" class="form-control" name="name" required> 
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-control" name="email" required> 
+                            <label for="phone" class="form-label">Your Phone</label>
+                            <input type="text" id="phone" class="form-control" name="phone" required> 
+                            <label for="message" class="form-label">Your Message</label> 
+                            <textarea name="message" id="message" rows="10" maxlength="655" class="form-control" minlength="100" required></textarea> <br>
+                            <button class="btn btn-primary" type="submit">submit form</button>
+                        </form>
+                    </div>
+                
+                </div>
             </fieldset>
         </section>
     </main>
     <!-- <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
-<footer>
-    <div>
-        <section>
+<footer class="body-titeray-bg">
+    <div class="container">
             <h4>Footer Section</h4>
-            <div>
+        <section class="row">
+            <div class="col-md-6">
                 <h5>Footer Title</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores rerum doloremque. Nam dignissimos repellat tenetur atque, obcaecati iste voluptates placeat, nesciunt aspernatur maxime qui, maiores molestias eaque tempora nostrum?
+                </p>
             </div>
-            <div>
+            <div class="col-md-3">
                 <h5>Help Links</h5>
+                <a href="" class="nav-link">Home Page</a>
+                <a href="" class="nav-link">About Page</a>
+                <a href="" class="nav-link">Contact Page</a>
             </div>
-            <div>
+            <div class="col-md-3">
                 <h5>Support Channels</h5>
+                <a href="" class="nav-link">Empty Link</a>
+                <a href="" class="nav-link">Empty Link</a>
+                <a href="" class="nav-link">Empty Link</a>
             </div>
         </section>
     </div>
